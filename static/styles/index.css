@@ -596,6 +596,46 @@ body {
 }
 
 
+
+.radio:checked,
+.radio:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.radio:checked + label,
+.radio:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.radio:checked + label:before,
+.radio:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #1F2132;
+    background-color: #ffffff;
+}
+.radio:checked + label:before,
+.radio:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+.radio-active:checked + label:before,
+.radio-active:not(:checked) + label:before {
+    background: #6DCCCC;
+}
+
+
+
+
 .footer {
     background: #007E5B;
 }
