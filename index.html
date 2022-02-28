@@ -46,7 +46,12 @@
                 <div class="intro-about">
                     <div class="intro-title">Serve coffee for you on every morning</div>
                     <div class="intro-subtitle">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.</div>
-                    <button class="intro-button">See all Products <img src="/static/images/icon-arrow.svg" alt="" class="img-arrow"></button>
+                    <button class="intro-button">
+                        <div class="button-see">
+                            <span class="intro-button-text">See all Products</span>
+                            <img src="/static/images/icon-arrow.svg" alt="" class="img-arrow">
+                        </div>
+                    </button>
                     </div>
             </div>
         </div>
@@ -87,52 +92,40 @@
             </div>
             <div class="block-products">
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Almond Love Coffee</div>
                         <div class="product-price">$14.50</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Billy Goat Breakfast</div>
                         <div class="product-price">$16.50</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Tarrazu Costa Rica</div>
                         <div class="product-price">$15.00</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Highlander Grog</div>
                         <div class="product-price">$15.00</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Lucky 7 Espresso</div>
                         <div class="product-price">$14.50</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
                 <div class="products">
-                    <div class="product">
                         <img src="/static/images/products.png" alt="" class="product-img">
                         <div class="product-name">Jamaican Island</div>
                         <div class="product-price">$16.50</div>
                         <button class="product-button">View Product</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -205,41 +198,102 @@
                 <div class="block-question-subtitle">Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum</div>
                 <div class="questions">
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">What is the difference between Free & Paid?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">What is the difference between Free & Paid?</div>
+                                <label class="question-btn" for="question-toggle1">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+                        <div class="answer">
+                            <input id="question-toggle1" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">How long shipping process goes to my place?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">How long shipping process goes to my place?</div>
+                                <label class="question-btn" for="question-toggle2">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+                        <div class="answer">
+                            <input id="question-toggle2" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">Can I request a refund money?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">Can I request a refund money?</div>
+                                <label class="question-btn" for="question-toggle3" class="question-toggle">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+                        <div class="answer">
+                            <input id="question-toggle3" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">Can I request more coffee?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">Can I request more coffee?</div>
+                                <label class="question-btn" for="question-toggle4" class="question-toggle">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+
+                        <div class="answer">
+                            <input id="question-toggle4" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">Why my coffee is not arrived until now?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">Why my coffee is not arrived until now?</div>
+                                <label class="question-btn" for="question-toggle5" class="question-toggle">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+                        <div class="answer">
+                            <input id="question-toggle5" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                     <div class="question-answer">
-                        <div class="question">
-                            <div class="question-text">Any promo for new member when join?</div>
-                            <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                            <div class="question">
+                                <div class="question-text">Any promo for new member when join?</div>
+                                <label class="question-btn" for="question-toggle6" class="question-toggle">
+                                    <img src="/static/images/question-arrow.jpg" alt="" class="question-arrow">
+                                </label>
+                            </div>
+                        <div class="answer">
+                            <input id="question-toggle6" type="checkbox" class="input-toggle"/>
+                            <div class="answer-text">
+                                Free version contains a limited amount of pre-designed
+                                blocks in comparison to Pro version with more than 100 blocks.
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -255,12 +309,8 @@
                     <div class="review-label">
                         <div class="review-label-person">Owen Estrada</div>
                         <div class="slider">
-                            <input type="radio" class="radio radio-active" id="slider1">
-                            <label for="slider1"></label>
-                            <input type="radio" class="radio" id="slider2">
-                            <label for="slider2"></label>
-                            <input type="radio" class="radio" id="slider3">
-                            <label for="slider3"></label>
+                            <input type="radio" class="radio" id="slider">
+                            <label for="slider"></label>
                         </div>
                     </div>
                 </div>

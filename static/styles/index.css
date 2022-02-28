@@ -71,7 +71,7 @@ body {
 
 .block-logo-menu {
     display: flex;
-    margin: 24px 0 23px 0;
+    margin: 24px 0 0 0;
 }
 
 .block-logo {
@@ -191,11 +191,15 @@ body {
 .intro-button {
     background: #1F2132;
     border-radius: 31.5449px;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.button-see {
+    padding: 20px 36px 19px;
+    display: flex;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .block-featured {
@@ -327,11 +331,12 @@ body {
     justify-content: space-between;
 }
 
-.products:hover {
-    border: 1px solid red;
+.products:hover .product-button {
+    background: #1F2132;
+    color: #ECE0D6;
 }
 
-.product {
+.products {
     padding: 50px 85px 44px;
     display: flex;
     flex-direction: column;
@@ -369,10 +374,6 @@ body {
     cursor: pointer;
 }
 
-.product-button:hover {
-    background: #1F2132;
-    color: #ECE0D6;
-}
 
 .benefits {
     background: #FAFAFA;
@@ -535,14 +536,18 @@ body {
 
 .question-answer {
     width: 487px;
-    background: #FFFFFF;
     margin: 0 31px 20px 0;
+}
+
+.question-answer {
+    width: 487px;
 }
 
 .question {
     display: flex;
     justify-content: space-between;
-    padding: 18px 20px 18px 20px;
+    padding: 18px 20px 0px 20px;
+    background: #FFFFFF;
 }
 
 .question-text {
@@ -557,6 +562,28 @@ body {
 .question-arrow {
     padding: 6px 0;
 }
+
+.input-toggle {
+    display: none;
+}
+
+.answer-text {
+    display: none;
+    padding: 12px 20px 18px 20px;
+    background: #FFFFFF;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8D8E90;
+}
+
+.input-toggle:checked ~ .answer-text{
+    display: block;
+    left: 0;
+}
+
 
 .reviews {
     display: flex;
@@ -593,44 +620,6 @@ body {
     font-size: 20px;
     line-height: 27px;
     color: #1B1D21;
-}
-
-
-
-.radio:checked,
-.radio:not(:checked)
-{
-    position: absolute;
-    left: -9999px;
-}
-
-.radio:checked + label,
-.radio:not(:checked) + label {
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    line-height: 20px;
-    cursor: pointer;
-}
-.radio:checked + label:before,
-.radio:not(:checked) + label:before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #1F2132;
-    background-color: #ffffff;
-}
-.radio:checked + label:before,
-.radio:not(:checked) + label:before {
-    border-radius: 100%;
-}
-
-.radio-active:checked + label:before,
-.radio-active:not(:checked) + label:before {
-    background: #6DCCCC;
 }
 
 
