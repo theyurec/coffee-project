@@ -53,13 +53,13 @@
 }
 
 body {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     font-weight: 400;
 }
 
 .wrapper {
     max-width: 1140px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .burger-menu {
@@ -241,7 +241,7 @@ body {
 }
 
 .intro-line {
-    width: 1364px;
+    max-    width: 1364px;
     height: 1px;
     background: #1B1D21;
     margin: auto;
@@ -358,11 +358,13 @@ body {
 .featured {
     display: flex;
     align-items: center;
-    padding: 53px 0 45px
+    padding: 53px 0 45px;
+    margin: auto;
+
 }
 
 .featured-text {
-    margin-right: 60px;
+    margin: 0 60px 0 150px;
     font-family: Lexend;
     font-style: normal;
     font-weight: 500;
@@ -379,9 +381,8 @@ body {
 }
 
 .featured-small {
-    width: 159px;
-    height: 43px;
-    background: #ECE0D6;
+    width: 100%;
+    max-width: 159px;
     margin-right: 70px;
 }
 .featured-small:last-child {
@@ -389,14 +390,37 @@ body {
 }
 
 .featured-big {
-    width: 269px;
-    height: 43px;
-    background: #ECE0D6;
+    width: 100%;
+    max-width: 269px;
     margin-right: 70px;
 }
 
 .block-about {
     margin: 111px 0 60px 0;
+}
+
+@media screen and  (max-width: 1325px) {
+    .featured-small {
+        margin-right: 5px;
+    }
+    .featured-big {
+        margin-right: 5px;
+    }
+}
+
+@media screen and  (max-width: 1130px) {
+    .featured-small {
+        margin-top: 5px;
+    }
+    .featured-big {
+        margin-top: 5px;
+    }
+    .featured-small:last-child {
+        margin-top: 5px;
+    }
+    .featured-text {
+        margin: 0 5px 0 5px;
+    }
 }
 
 .about-wrapper {
@@ -428,7 +452,7 @@ body {
     font-size: 18px;
     line-height: 32px;
     color: #6B6867;
-    width: 585px;
+    max-width: 585px;
 }
 
 .button-about {
@@ -436,10 +460,12 @@ body {
 }
 
 .about-img {
-    width: 390px;
-    height: 471px;
+    width: 100%;
+    max-width: 390px;
+    max-height: 471px;
     object-fit: cover;
-    margin: 2px 68px 0 87px;
+    /*margin: 2px 68px 0 87px;*/
+    margin: 2px 0 0;
 }
 
 .button-about {
@@ -450,6 +476,13 @@ body {
     border: none;
     background: #FFFFFF;
     cursor: pointer;
+}
+
+@media screen and (max-width: 838px) {
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .block-products {
@@ -704,6 +737,16 @@ body {
         margin: 0 10px;
     }
 }
+@media screen and (max-width: 880px) {
+    .gallery-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .block-questions {
     padding: 100px 0;
@@ -798,8 +841,9 @@ body {
 }
 
 .reviews-img {
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    max-width: 320px;
+    max-height: 320px;
     margin: 123px 0 136px 48px;
 }
 
@@ -830,6 +874,15 @@ body {
     color: #1B1D21;
 }
 
+.sliders {
+    display: flex;
+    margin-right: 101px;
+}
+
+.slider {
+    margin-left: 16px;
+}
+
 .slider > input {
     display: none;
 }
@@ -847,6 +900,19 @@ body {
     border: 1px solid rgba(109, 204, 204, 1);
 }
 
+@media screen and (max-width: 1001px) {
+    .reviews {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .reviews-img {
+        margin: auto;
+    }
+    .review {
+        margin: 20px;
+    }
+}
+
 .footer {
     background: #007E5B;
 }
@@ -859,7 +925,7 @@ body {
 }
 
 .subsribe-title {
-    width: 572px;
+    max-width: 572px;
     font-family: Lexend;
     font-style: normal;
     font-weight: 500;
@@ -899,6 +965,19 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 496px) {
+    .subsribe-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    .button-subscribe {
+        padding: 2px 2px;
+    }
+}
+
 .footer-line {
     background: #FFFFFF;
     height: 1px;
@@ -906,13 +985,16 @@ body {
 
 .footer-menu {
     display: flex;
-    justify-content: center;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 64px 0 63px 0;
+    max-width: 848px;
+    width: 100%;
+    margin: auto;
 }
 
 .footer-link {
-    margin-right: 56px;
+
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -920,4 +1002,12 @@ body {
     line-height: 22px;
     color: #FFFFFF;
 }
-
+.footer-link:last-child {
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
